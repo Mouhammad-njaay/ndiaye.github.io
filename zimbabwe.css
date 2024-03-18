@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    font-size: large ;
+    height: 70px;
+    background-color: beige;
+    font: 18px;
+}
+nav{
+    width: 100%;
+}
+nav ul {
+    font-size: 30px;
+    display:flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: brown;
+    transform: translate(0%,50%);
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    color: rgb(100, 19, 19);
+    text-shadow: 1px 1px 2px rgb(129, 126, 126);
+}
+li a:hover{
+    color: rgb(51, 0, 255);
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    color: red;
+    text-decoration: none;
+}
+
+main {
+    padding: 30px;
+    background-image: url(zimbabwe\ image\ 2.jpg);
+    background-size: cover;
+}
+
+.destination {
+    margin-bottom: 30px;
+}
+
+.destination h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.destination img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.wrapper{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    margin: 3cm auto 0 auto;
+}
+
+.card{
+    width: 280px;
+    height: 360px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover{
+    transform: translateY(20px);
+}
+
+.card:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(198, 181, 25, 0.5),  rgba(249, 229, 54, 0.5));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.card:hover:before{
+    opacity: 1;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    width: 250px;
+}
+
+.card:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.card .info h1{
+    margin: 0;
+    font-size: 25px;
+}
+
+.card .info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.card .info .btn{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.card .info .btn:hover{
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper h1 .x{
+    margin: 0;
+    font-size: 20px;
+}
